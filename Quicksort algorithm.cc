@@ -4,14 +4,11 @@
 
 using namespace std;
 
-// function to swap elements
-void swap(int *g, int *h) {
-  int t = *g;
-  *g = *h;
-  *h = t;
-}
+// script to interchange the element
+void swap(int *g, int *h) 
+{ int t = *g; *g = *h; *h = t; }
 
-// function to print the array
+// script to print the array
 void printArray(int array[], int size) {
   int i;
   for (i = 0; i < size; i++)
@@ -19,10 +16,9 @@ void printArray(int array[], int size) {
   cout << endl;
 }
 
-// function to rearrange array (find the partition point)
 int partition(int array[], int low, int high) {
-    
-  // select the rightmost element as pivot
+      
+  int i = low, j = high;
   int pivot = array[high];
   
   // pointer for greater element
