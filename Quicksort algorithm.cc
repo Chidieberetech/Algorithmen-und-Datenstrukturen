@@ -1,13 +1,15 @@
 // Quick sort in C++
 
-#include <iostream>
 using namespace std;
+#include  "iostream"
+
+
 
 // function to swap elements
-void swap(int *a, int *b) {
-  int t = *a;
-  *a = *b;
-  *b = t;
+void swap(int *g, int *h) {
+  int t = *g;
+  *g = *h;
+  *h = t;
 }
 
 // function to print the array
