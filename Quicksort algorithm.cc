@@ -1,6 +1,6 @@
 // Quick sort in C++
 
-using namespace std;
+using namespace std
 #include  "iostream"
 
 
