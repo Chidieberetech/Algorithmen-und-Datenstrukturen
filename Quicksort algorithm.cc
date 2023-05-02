@@ -1,14 +1,14 @@
-// Quick-sorting in C++
+//***** Gruppe Quick-sorting in C++
 
 #include  "iostream"
 
 using namespace std;
 
-//*** interchanging the element
+//***** interchanging the element
 void swap(int *g, int *h) 
 { int t = *g; *g = *h; *h = t; }
 
-//*** Output of  the array
+//***** Output of  the array
 void printArray(int array[], int size) {
   int i;
   for (i = 0; i < size; i++)
@@ -46,7 +46,7 @@ void quickSort(int array[], int low, int high) {
   }
 }
 
-// main function/script that uses the algorithm with different inputs.
+//***** main function/script that uses the algorithm with different inputs.
 int main() {
   int data[] = {9, 12, 11, 10, 14, 16, 13};
   int n = sizeof(data) / sizeof(data[0]);
@@ -54,7 +54,7 @@ int main() {
   cout << "This the Unsorted Array: \n";
   printArray(data, n);
   
-  // making quicksort on inputed data
+  //***** making quicksort on inputed data
   quickSort(data, 0, n - 1);
   
   cout << "Eureka the Sorted array: \n";
