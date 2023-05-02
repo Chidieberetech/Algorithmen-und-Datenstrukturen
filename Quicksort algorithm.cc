@@ -1,4 +1,4 @@
-//***** Gruppe Quick-sorting in C++
+//***** Gruppe 8 Quick-sorting assignment in C++
 
 #include  "iostream"
 
@@ -50,13 +50,15 @@ void quickSort(int array[], int low, int high) {
 int main() {
   int data[] = {9, 12, 11, 10, 14, 16, 13};
   int n = sizeof(data) / sizeof(data[0]);
-  
-  cout << "This the Unsorted Array: \n";
+
+  cout << R"(This the Unsorted Array: 
+)";
   printArray(data, n);
   
   //***** making quicksort on inputed data
   quickSort(data, 0, n - 1);
-  
-  cout << "Eureka the Sorted array: \n";
+
+  cout << R"(Eureka the Sorted array: 
+)";
   printArray(data, n);
 }
