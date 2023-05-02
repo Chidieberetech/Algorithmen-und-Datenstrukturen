@@ -1,9 +1,8 @@
 // Quick sort in C++
 
-using namespace std
 #include  "iostream"
 
-
+using namespace std;
 
 // function to swap elements
 void swap(int *g, int *h) {
@@ -66,7 +65,7 @@ void quickSort(int array[], int low, int high) {
   }
 }
 
-// Driver code
+// main function/script that uses the algorithm with different inputs.
 int main() {
   int data[] = {8, 7, 6, 1, 0, 9, 2};
   int n = sizeof(data) / sizeof(data[0]);
