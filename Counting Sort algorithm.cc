@@ -1,12 +1,17 @@
 #include "iostream"
-
+#include "fstream"
+ /* @ Chidiebere und Payal
+ * @Implement the Counting Sort algorithm.
+ * @date 2023-01-05
+*/
 using namespace std;
 
 void print_array(int A[],int n);
 
 int main(int argc, char const *argv[])
 {
-    int n = 18; 
+    //Inputing data to find the max. value of the array
+    int n = 19; 
     int IA[n] = {11,4,7,3,1,2,3,10,9,9,4,1,2,1,7,10,1,11,9};
     cout<<"The Input array data";
     print_array(IA,n);
@@ -19,6 +24,8 @@ int main(int argc, char const *argv[])
     cout<<"The Highest value of the data is "<<max<<endl;
     int AuxSize = max + 1;
     int Aux[AuxSize] = {};
+
+    //Find the sum auxillary array
     cout<<"The Auxiliary Array ";
     print_array(Aux,AuxSize);
     
